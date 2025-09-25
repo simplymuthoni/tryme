@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/parents/', include('parents.urls')),  
     path('api/students/', include('students.urls')),
+    path('api/attendance/', include('attendance.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
