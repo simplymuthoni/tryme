@@ -9,7 +9,7 @@ from .models import (Student)
 from .serializers import (StudentSerializer)
 
 @method_decorator(csrf_exempt, name='dispatch')
-class ParentViewSet(viewsets.ModelViewSet):
+class StudentViewSet(viewsets.ModelViewSet):
 
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
