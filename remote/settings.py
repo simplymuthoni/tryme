@@ -29,7 +29,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "unepic-mayra-unknowable.ngrok-free.dev",
+]
 
 #For Development Purpose Only
 CORS_ALLOWED_ALL_ORIGINS = True
